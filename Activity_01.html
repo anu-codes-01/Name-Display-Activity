@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { text-align:center; margin-top:50px; font-family:Arial; }
+    input {
+      padding:8px;
+      width:200px;
+      font-size:16px;
+    }
+    button {
+      padding:10px 20px;
+      margin-top:10px;
+      background:#FF5722;
+      color:white;
+      border:none;
+      border-radius:5px;
+      cursor:pointer;
+    }
+    h3 { margin-top:20px; }
+  </style>
+</head>
+<body>
+
+<h2>Name Display Activity</h2>
+
+<input type="text" id="username" placeholder="Enter your name" />
+<br>
+<button onclick="showName()">Submit</button>
+
+<h3 id="result"></h3>
+
+<script>
+  function showName() {
+    const name = document.getElementById("username").value;
+    document.getElementById("result").innerText = "Hello, " + name + " 👋";
+  }
+</script>
+
+</body>
+</html>
